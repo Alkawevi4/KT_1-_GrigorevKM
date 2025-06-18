@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа по сетям</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="title-page">
+            <h1>АНО ПО "ИТ ХАБ"</h1>
+            <div class="lab-info">
+                <p>Лабораторная работа</p>
+                <p>По дисциплине: "Основы Компьютерных Сетей"</p>
+            </div>
+            <div class="student-info">
+                <p>Выполнил: Григорьев Кирилл</p>
+                <p>Группа: 1ЭИТ1-9.24</p>
+                <p>Год: 2025</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topology">
+            <h2>Топология сети</h2>
+            <img src="images/topology.png" alt="Топология сети">
+            <p>На рисунке представлена топология сети, где:</p>
+            <ul>
+                <li>2621XM - роутер (настроен с фамилией Григорьев)</li>
+                <li>SW1, SW2 - коммутаторы</li>
+                <li>host_1-host_4 - рабочие станции</li>
+            </ul>
+        </section>
+        <section class="ip-config">
+            <h2>IP-адресация</h2>
+            <p>Третий октет в IPv4-адресах соответствует номеру в списке группы (12):</p>
+            <table>
+                <tr>
+                    <th>Устройство</th>
+                    <th>IP-адрес</th>
+                    <th>Маска подсети</th>
+                </tr>
+                <tr>
+                    <td>SW1</td>
+                    <td>172.16.12.0</td>
+                    <td>255.255.0.0</td>
+                </tr>
+                <tr>
+                    <td>SW2</td>
+                    <td>192.168.12.0</td>
+                    <td>255.255.255.0</td>
+                </tr>
+                <tr>
+                    <td>host_1</td>
+                    <td>172.16.12.0</td>
+                    <td>255.255.0.0</td>
+                </tr>
+                <tr>
+                    <td>host_2</td>
+                    <td>172.16.12.0</td>
+                    <td>255.255.0.0</td>
+                </tr>
+                <tr>
+                    <td>host_3</td>
+                    <td>192.168.12.0</td>
+                    <td>255.255.255.0</td>
+                </tr>
+                <tr>
+                    <td>host_4</td>
+                    <td>192.168.12.0</td>
+                    <td>255.255.255.0</td>
+                </tr>
+            </table>
+        </section>
+        <section class="screenshots">
+            <h2>Скриншоты</h2>
+            <div class="screenshot">
+                <img src="images/screenshots/router_config1.png">
+                <img src="images/screenshots/router_config2.png">
+                <img src="images/screenshots/router_config3.png">
+                <img src="images/screenshots/router_config4.png">
+            </div>
+        </section>
+
+        <section class="conclusion">
+            <h2>Выводы</h2>
+            <p>В ходе лабораторной работы были выполнены следующие задачи:</p>
+            <ul>
+                <li>Настроена сетевая топология в Packet Tracer</li>
+                <li>Произведена настройка IP-адресов на устройствах</li>
+                <li>Проверена связность между устройствами</li>
+                <li>Экспортированы конфигурации устройств</li>
+            </ul>
+            <p>В результате все устройства успешно взаимодействуют в сети.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ссылка на репозиторий с материалами: <a href="https://github.com/Alkawevi4/KT_1-_GrigorevKM">GitHub</a></p>
+    </footer>
+</body>
+</html>
